@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
+import Logo from "/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,6 +17,7 @@ const Navbar = () => {
       <div className="container-custom flex justify-between items-center py-4">
         <Link to="/" className="flex items-center">
           <span className="text-2xl font-poppins font-bold">
+            <img src={Logo} alt="Logo" className="h-8 mr-2" />
             Let's <span className="text-lsa-green">Speak</span> <span className="text-lsa-gold">Africa</span>
           </span>
         </Link>
@@ -68,14 +70,14 @@ const NavLink = ({ to, children }: { to: string; children: React.ReactNode }) =>
   );
 };
 
-const MobileNavLink = ({ 
-  to, 
-  onClick, 
-  children 
-}: { 
-  to: string; 
+const MobileNavLink = ({
+  to,
+  onClick,
+  children
+}: {
+  to: string;
   onClick: () => void;
-  children: React.ReactNode 
+  children: React.ReactNode
 }) => {
   return (
     <Link
