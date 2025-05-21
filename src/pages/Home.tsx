@@ -10,7 +10,7 @@ const Home = () => {
     <div>
       <Hero
         title="Every Voice Matters. Every Story Counts."
-        subtitle="Let'sSpeak Africa a.k.a Ruth Reje Advocacy Foundation is a youth-led NGO using storytelling, public speaking, and art to promote climate action, gender equity, and social justice."
+        subtitle="Let's Speak Africa a.k.a Ruth Reje Advocacy Foundation is a youth-led NGO using storytelling, public speaking, and art to promote climate action, gender equity, and social justice."
         buttonText="Join Us"
         buttonLink="/get-involved"
         secondaryButtonText="Watch Stories"

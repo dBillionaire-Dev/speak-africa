@@ -11,7 +11,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Let's Speak Africa</h3>
             <p className="text-gray-300 mb-4">
-              Youth-led advocacy through storytelling, public speaking, and art to promote climate action, gender equity, and social justice.
+              Let's Speak Africa is a trademark of Ruth Reje Advocacy Foundation, a registered Non-Governmental Organization (NGO) in Nigeria.
             </p>
           </div>
 
@@ -67,7 +67,9 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-6 text-center text-gray-400 text-sm">
-          <p>© {new Date().getFullYear()} Let's Speak Africa. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Ruth Reje Advocacy Foundation. All rights reserved. <a href="https://nexdbillionairedev.vercel.app/" target="_blank" className="text-[#666] underline hover:text-lsa-gold transition-colors">
+            Nex.Dev
+          </a></p>
         </div>
       </div>
     </footer>

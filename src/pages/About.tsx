@@ -186,9 +186,20 @@ const About = () => {
                 description="Expanded our reach to two additional cities in Nigeria, training 50+ youth advocates and launching the Voices for Her program."
               />
 
+              <MobileTimelineItem
+                year="April - May 2024"
+                title="Enugu 500 Tree Planting Campaign"
+                description="We planted 520 trees across 31 elementary schools in Enugu State as part of our commitment to combating deforestation, promoting food sustainability, and raising climate awareness among young learners. Alongside this effort, we launched Environmental Conservation Clubs in each school to empower students with hands-on environmental education and long-term stewardship skills."
+              />
 
               <MobileTimelineItem
-                year="2024"
+                year="February 2025"
+                title="Project 100 Environmental Storytelling Clubs"
+                description="We launched storytelling-based environmental advocacy clubs in schools, training young people to use their voices for climate action. These clubs empower children and teens to speak up for their future and champion the protection of our planet."
+              />
+
+              <MobileTimelineItem
+                year="2025"
                 title="Today and Beyond"
                 description="Continuing to grow our impact with over 2,000 youth reached, 3+ cities with active clubs, and 100+ trained advocates."
               />
@@ -201,42 +212,56 @@ const About = () => {
               {/* Timeline Items */}
               <div className="grid grid-cols-1 gap-12">
                 <TimelineItem
-                  year="2018"
+                  year="December 2019"
                   title="The Beginning"
-                  description="Ruth Bassey Okim founded Let's Speak Africa as a community initiative in Lagos, Nigeria, focusing on environmental storytelling."
+                  description="Let’s Speak Africa was founded on December 13, 2019 by Ruth Bassey Okim in Calabar, Nigeria. And officially launched with a speech concert that marked the beginning of our commitment to youth-led advocacy through public speaking. Since then, we have successfully organized seven speech concerts, each providing a platform for storytelling and civic engagement."
                   isLeft={true}
                 />
 
                 <TimelineItem
-                  year="2019"
-                  title="First Environmental Storytelling Club"
-                  description="Launched our first youth club with 20 members, focusing on using stories to raise awareness about local environmental challenges."
+                  year="March 2022"
+                  title="Let’s Speak Women’s Open Tournament"
+                  description="In March 2022, we introduced the Let’s Speak Women’s Open, a public speaking tournament dedicated to amplifying women's voices. This annual event, held every March in celebration of Women’s Month, has become a cornerstone of our gender equity advocacy"
                   isLeft={false}
                 />
 
                 <TimelineItem
-                  year="2020"
+                  year="March 2022"
+                  title="First Community Outreach"
+                  description="Our first community outreach initiative took place in March 2022, featuring a self-defense training program for women, aimed at promoting safety and empowerment."
+                  isLeft={true}
+                />
+
+                <TimelineItem
+                  year="April 2022"
+                  title="First Environmental Outreach"
+                  description="The following month, in April 2022, we carried out our first environmental outreach, marking the start of our on-ground climate advocacy efforts."
+                  isLeft={false}
+                />
+
+                <TimelineItem
+                  year="2023"
                   title="Expansion to Multiple Cities"
                   description="Expanded our reach to two additional cities in Nigeria, training 50+ youth advocates and launching the Voices for Her program."
                   isLeft={true}
                 />
 
                 <TimelineItem
-                  year="2021"
-                  title="7 Days of Environmental Action"
-                  description="Organized our first coordinated week of environmental action, mobilizing over 500 youth across multiple communities."
+                  year="April - May 2024"
+                  title="Enugu 500 Tree Planting Campaign"
+                  description="We planted 520 trees across 31 elementary schools in Enugu State as part of our commitment to combating deforestation, promoting food sustainability, and raising climate awareness among young learners. Alongside this effort, we launched Environmental Conservation Clubs in each school to empower students with hands-on environmental education and long-term stewardship skills."
                   isLeft={false}
                 />
 
                 <TimelineItem
-                  year="2022"
-                  title="International Recognition"
-                  description="Received our first international grant and recognition for our innovative approach to youth advocacy and climate action."
+                  year="February 2025"
+                  title="Project 100 Environmental Storytelling Clubs"
+                  description="We launched storytelling-based environmental advocacy clubs in schools, training young people to use their voices for climate action. These clubs empower children and teens to speak up for their future and champion the protection of our planet."
                   isLeft={true}
                 />
 
                 <TimelineItem
-                  year="2023"
+                  year="2025"
                   title="Today and Beyond"
                   description="Continuing to grow our impact with over 2,000 youth reached, 3+ cities with active clubs, and 100+ trained advocates."
                   isLeft={false}
