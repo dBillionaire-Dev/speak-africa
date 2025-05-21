@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 import SectionTitle from "../components/SectionTitle";
 import StatCard from "../components/StatCard";
 import TestimonialCard from "../components/TestimonialCard";
+import Banner from "/Impact.jpg";
 
 const Impact = () => {
   return (
@@ -10,16 +11,16 @@ const Impact = () => {
       <Hero
         title="Our Impact"
         subtitle="See how we're making a difference across Africa through youth advocacy and storytelling"
-        backgroundImage="https://images.unsplash.com/photo-1607460267907-5cd84ffbd662?w=1200"
+        backgroundImage={Banner}
         overlayOpacity="opacity-60"
       />
 
       {/* Impact Stats Section */}
       <section className="section-padding">
         <div className="container-custom">
-          <SectionTitle 
-            title="Impact in Numbers" 
-            subtitle="A snapshot of our reach and achievements" 
+          <SectionTitle
+            title="Impact in Numbers"
+            subtitle="A snapshot of our reach and achievements"
           />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -38,9 +39,9 @@ const Impact = () => {
       {/* Success Stories */}
       <section className="section-padding bg-gray-50">
         <div className="container-custom">
-          <SectionTitle 
-            title="Success Stories" 
-            subtitle="Real impact from our programs and initiatives" 
+          <SectionTitle
+            title="Success Stories"
+            subtitle="Real impact from our programs and initiatives"
           />
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -102,9 +103,9 @@ const Impact = () => {
       {/* Testimonials Section */}
       <section className="section-padding">
         <div className="container-custom">
-          <SectionTitle 
-            title="Testimonials" 
-            subtitle="Hear from the people who have been part of our journey" 
+          <SectionTitle
+            title="Testimonials"
+            subtitle="Hear from the people who have been part of our journey"
           />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -145,9 +146,9 @@ const Impact = () => {
       {/* Partners Section */}
       <section className="section-padding bg-gray-50">
         <div className="container-custom">
-          <SectionTitle 
-            title="Our Partners" 
-            subtitle="Organizations that support and collaborate with us" 
+          <SectionTitle
+            title="Our Partners"
+            subtitle="Organizations that support and collaborate with us"
           />
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 items-center">

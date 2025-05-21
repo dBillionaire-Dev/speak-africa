@@ -1,23 +1,24 @@
 
 import Hero from "../components/Hero";
 import SectionTitle from "../components/SectionTitle";
+import Banner from "/Project.jpg"
 
 const Programs = () => {
   return (
     <div>
       <Hero
         title="Our Programs"
-        subtitle="Discover how we're empowering youth to create change through our innovative initiatives"
-        backgroundImage="https://images.unsplash.com/photo-1517486808906-6ca8b3f8e1c1?w=1200"
+        subtitle="At Let’s Speak Africa, we harness storytelling, public speaking, and grassroots action to drive social and environmental change. Here are some of our key projects across Africa and Asia."
+        backgroundImage={Banner}
         overlayOpacity="opacity-60"
       />
 
       {/* Core Focus Areas Section */}
       <section className="section-padding">
         <div className="container-custom">
-          <SectionTitle 
-            title="Our Core Focus Areas" 
-            subtitle="Three key areas where we concentrate our efforts to create lasting change" 
+          <SectionTitle
+            title="Our Core Focus Areas"
+            subtitle="Three key areas where we concentrate our efforts to create lasting change"
           />
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -66,15 +67,15 @@ const Programs = () => {
       {/* Flagship Programs */}
       <section id="storytelling-clubs" className="section-padding bg-gray-50">
         <div className="container-custom">
-          <SectionTitle 
-            title="Environmental Storytelling Clubs" 
+          <SectionTitle
+            title="Environmental Storytelling Clubs"
           />
 
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="md:w-1/2">
-              <img 
-                src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=800" 
-                alt="Environmental Storytelling Club" 
+              <img
+                src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=800"
+                alt="Environmental Storytelling Club"
                 className="rounded-lg shadow-lg w-full"
               />
             </div>
@@ -104,15 +105,15 @@ const Programs = () => {
 
       <section id="seven-days" className="section-padding">
         <div className="container-custom">
-          <SectionTitle 
-            title="7 Days of Environmental Action" 
+          <SectionTitle
+            title="7 Days of Environmental Action"
           />
 
           <div className="flex flex-col md:flex-row-reverse gap-12 items-center">
             <div className="md:w-1/2">
-              <img 
-                src="https://images.unsplash.com/photo-1466721591366-2d5fba72006d?w=800" 
-                alt="7 Days of Environmental Action" 
+              <img
+                src="https://images.unsplash.com/photo-1466721591366-2d5fba72006d?w=800"
+                alt="7 Days of Environmental Action"
                 className="rounded-lg shadow-lg w-full"
               />
             </div>
@@ -142,15 +143,15 @@ const Programs = () => {
 
       <section id="voices" className="section-padding bg-gray-50">
         <div className="container-custom">
-          <SectionTitle 
-            title="Voices for Her" 
+          <SectionTitle
+            title="Voices for Her"
           />
 
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="md:w-1/2">
-              <img 
-                src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=800" 
-                alt="Voices for Her" 
+              <img
+                src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=800"
+                alt="Voices for Her"
                 className="rounded-lg shadow-lg w-full"
               />
             </div>
