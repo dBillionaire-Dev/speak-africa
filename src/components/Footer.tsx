@@ -42,23 +42,22 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Contact Us</h3>
             <ul className="space-y-2 text-gray-300">
-              <li>Email: info@letsspeakafrica.org</li>
-              <li>Phone: +123 456 7890</li>
-              <li>Lagos, Nigeria</li>
+              <li>Email: <a href="mailto:letsspeakafrica@gmail.com" target="_blank" className="text-white hover:text-lsa-gold transition-colors">info@letsspeakafrica.org</a></li>
+              <li>Phone: <a href="tel:+2348132609942" target="_blank" className="text-white hover:text-lsa-gold transition-colors">+234 813 260 9942</a></li>
+              <li>Calabar, Nigeria</li>
             </ul>
             <div className="mt-4 flex space-x-4">
-              {/* Social Media Icons */}
-              <a href="#" className="text-white hover:text-lsa-gold transition-colors">
+              <a href="https://www.facebook.com/share/1A5ijF9eaN/?mibextid=wwXIfr" target="_blank" className="text-white hover:text-lsa-gold transition-colors">
                 <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center">
                   <Facebook size={20} />
                 </div>
               </a>
-              <a href="#" className="text-white hover:text-lsa-gold transition-colors">
+              <a href="https://www.instagram.com/letsspeakafrica_/?igsh=NWZoaDc1eDd5bzd3&utm_source=qr#" target="_blank" className="text-white hover:text-lsa-gold transition-colors">
                 <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center">
                   <Instagram size={20} />
                 </div>
               </a>
-              <a href="#" className="text-white hover:text-lsa-gold transition-colors">
+              <a href="https://www.linkedin.com/company/letsspeak-africa/" target="_blank" className="text-white hover:text-lsa-gold transition-colors">
                 <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center">
                   <Linkedin size={20} />
                 </div>
