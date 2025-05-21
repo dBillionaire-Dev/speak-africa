@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Hero from "../components/Hero";
 import SectionTitle from "../components/SectionTitle";
+import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
 
 const GetInvolved = () => {
   // State for form handling
@@ -248,18 +249,26 @@ const GetInvolved = () => {
                   <div>
                     <h4 className="font-bold text-lg mb-2">Follow Us</h4>
                     <div className="flex space-x-4">
-                      {/* Social Media Icons Placeholders */}
+                      {/* Social Media Icons */}
                       <a href="#" className="text-lsa-black hover:text-lsa-gold transition-colors">
-                        <div className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center">FB</div>
+                        <div className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center">
+                          <Facebook size={20} />
+                        </div>
                       </a>
                       <a href="#" className="text-lsa-black hover:text-lsa-gold transition-colors">
-                        <div className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center">IG</div>
+                        <div className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center">
+                          <Instagram size={20} />
+                        </div>
                       </a>
                       <a href="#" className="text-lsa-black hover:text-lsa-gold transition-colors">
-                        <div className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center">TW</div>
+                        <div className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center">
+                          <Linkedin size={20} />
+                        </div>
                       </a>
                       <a href="#" className="text-lsa-black hover:text-lsa-gold transition-colors">
-                        <div className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center">YT</div>
+                        <div className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center">
+                          <Youtube size={20} />
+                        </div>
                       </a>
                     </div>
                   </div>

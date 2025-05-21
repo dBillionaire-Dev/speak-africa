@@ -1,5 +1,6 @@
 
 import { Link } from "react-router-dom";
+import { Facebook, Instagram, Linkedin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -45,15 +46,21 @@ const Footer = () => {
               <li>Lagos, Nigeria</li>
             </ul>
             <div className="mt-4 flex space-x-4">
-              {/* Social Media Icons Placeholders */}
+              {/* Social Media Icons */}
               <a href="#" className="text-white hover:text-lsa-gold transition-colors">
-                <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center">FB</div>
+                <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center">
+                  <Facebook size={20} />
+                </div>
               </a>
               <a href="#" className="text-white hover:text-lsa-gold transition-colors">
-                <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center">IG</div>
+                <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center">
+                  <Instagram size={20} />
+                </div>
               </a>
               <a href="#" className="text-white hover:text-lsa-gold transition-colors">
-                <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center">TW</div>
+                <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center">
+                  <Linkedin size={20} />
+                </div>
               </a>
             </div>
           </div>
