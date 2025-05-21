@@ -10,7 +10,7 @@ const Home = () => {
     <div>
       <Hero
         title="Every Voice Matters. Every Story Counts."
-        subtitle="Let's Speak Africa a.k.a Ruth Reje Advocacy Foundation is a youth-led NGO using storytelling, public speaking, and art to promote climate action, gender equity, and social justice."
+        subtitle="Let'sSpeak Africa a.k.a Ruth Reje Advocacy Foundation is a youth-led NGO using storytelling, public speaking, and art to promote climate action, gender equity, and social justice."
         buttonText="Join Us"
         buttonLink="/get-involved"
         secondaryButtonText="Watch Stories"
@@ -52,7 +52,7 @@ const Home = () => {
             title="Our Programs"
             subtitle="Discover our innovative initiatives that empower youth and create lasting change"
           />
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <ProgramCard
               title="Environmental Storytelling Clubs"
@@ -73,7 +73,7 @@ const Home = () => {
               link="/programs#voices"
             />
           </div>
-          
+
           <div className="text-center mt-12">
             <Link to="/programs" className="btn-secondary">
               Explore All Programs
@@ -89,14 +89,14 @@ const Home = () => {
             title="Our Impact"
             subtitle="Together, we're making a meaningful difference across Africa"
           />
-          
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <StatCard number="2,000+" label="Youth Reached" />
             <StatCard number="3+" label="Cities with Active Clubs" />
             <StatCard number="100+" label="Trained Advocates" />
             <StatCard number="12" label="Community Projects" />
           </div>
-          
+
           <div className="text-center mt-12">
             <Link to="/impact" className="btn-primary">
               See Our Full Impact

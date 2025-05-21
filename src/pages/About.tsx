@@ -2,10 +2,11 @@
 import Hero from "../components/Hero";
 import SectionTitle from "../components/SectionTitle";
 import { useIsMobile } from "../hooks/use-mobile";
+import Headshot from "/Headshot.jpg";
 
 const About = () => {
   const isMobile = useIsMobile();
-  
+
   return (
     <div>
       <Hero
@@ -20,22 +21,22 @@ const About = () => {
         <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
-              <SectionTitle title="Our Mission" centered={false} />
+              <SectionTitle title="Our Vision" centered={false} />
               <p className="text-lg text-gray-700 mb-6">
-                Let's Speak Africa empowers youth across Africa to use their voices through storytelling, public speaking, and art to drive meaningful change in climate action, gender equity, and social justice.
+                An Africa where every voice is heard, and every story shapes the path toward justice, equity, and sustainability.
               </p>
               <p className="text-lg text-gray-700">
-                We create platforms and programs that amplify the voices of young people, allowing them to shape the narrative around critical issues affecting their communities and the continent.
+                By 2030, we aim to have empowered over 10,000 youth advocates across 20 African countries, creating a network of changemakers driving positive transformation.
               </p>
             </div>
 
             <div>
-              <SectionTitle title="Our Vision" centered={false} />
+              <SectionTitle title="Our Mission" centered={false} />
               <p className="text-lg text-gray-700 mb-6">
-                We envision an Africa where young people are at the forefront of creating equitable, sustainable, and just communities through the power of their stories and advocacy.
+                To empower African youth through storytelling, public speaking, and creative expression to lead movements in climate action, gender justice, and community development.
               </p>
               <p className="text-lg text-gray-700">
-                By 2030, we aim to have empowered over 10,000 youth advocates across 20 African countries, creating a network of changemakers driving positive transformation.
+                We create platforms and programs that amplify the voices of young people, allowing them to shape the narrative around critical issues affecting their communities and the continent.
               </p>
             </div>
           </div>
@@ -45,9 +46,9 @@ const About = () => {
       {/* Our Values Section */}
       <section className="section-padding bg-gray-50">
         <div className="container-custom">
-          <SectionTitle 
-            title="Our Values" 
-            subtitle="The principles that guide our work and define our organization" 
+          <SectionTitle
+            title="Our Values"
+            subtitle="The principles that guide our work and define our organization"
           />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -119,26 +120,26 @@ const About = () => {
         <div className="container-custom">
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="md:w-2/5">
-              <img 
-                src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=600"
-                alt="Ruth Bassey Okim" 
+              <img
+                src={Headshot}
+                alt="Ruth Bassey Okim"
                 className="rounded-lg shadow-lg w-full"
               />
             </div>
             <div className="md:w-3/5">
-              <SectionTitle 
-                title="Our Founder" 
-                subtitle="Meet Ruth Bassey Okim (Ruth Reje)" 
+              <SectionTitle
+                title="Our Founder"
+                subtitle="Meet Ruth Bassey Okim (Ruth Reje)"
                 centered={false}
               />
               <p className="text-lg text-gray-700 mb-6">
-                Ruth Bassey Okim, also known as Ruth Reje, is a passionate youth activist, environmental advocate, and speaker who founded Let's Speak Africa with a vision to empower young Africans to use their voices for change.
+                Ruth Bassey Okim, also known as Ruth Reje, is an award-winning public speaker, spoken word artist, environmentalist, and trained medical laboratory scientist. She is the Founder and CEO of Let’s Speak Africa, a youth-led organization that leverages public speaking and community engagement to drive advocacy across Africa, particularly in the areas of climate action and women’s rights.
               </p>
               <p className="text-lg text-gray-700 mb-6">
-                With a background in environmental science and communication, Ruth has led various initiatives across Nigeria and beyond, working to address climate challenges, promote gender equity, and create platforms for youth leadership.
+                In addition to her leadership at Let’s Speak Africa, Ruth serves as the National Director of Advocacy at Kingdom Nation Impact Community in Nigeria, West Africa. She is also the National Coordinator for Sierra Leone and Gambia at Students for Liberty Africa, where she continues to champion the values of freedom, justice, and civic participation.
               </p>
               <p className="text-lg text-gray-700">
-                Under her leadership, Let's Speak Africa has grown from a local initiative to a movement that spans multiple cities, empowering thousands of young people to become advocates for positive change in their communities.
+                Ruth is deeply committed to the belief that public speaking is a powerful tool for societal transformation. Under her leadership, Let’s Speak Africa has grown from a local initiative into a dynamic movement spanning multiple cities, empowering thousands of young people to raise their voices, share their stories, and advocate for meaningful change within their communities. Through her work, Ruth continues to inspire and equip the next generation of African leaders to speak up and lead with purpose.
               </p>
             </div>
           </div>
@@ -148,45 +149,46 @@ const About = () => {
       {/* Journey Timeline Section */}
       <section className="section-padding bg-gray-50">
         <div className="container-custom">
-          <SectionTitle 
-            title="Our Journey" 
-            subtitle="How Let's Speak Africa has evolved over the years" 
+          <SectionTitle
+            title="Our Journey"
+            subtitle="How Let's Speak Africa has evolved over the years"
           />
 
           {isMobile ? (
             <div className="space-y-8">
-              <MobileTimelineItem 
-                year="2018"
+              <MobileTimelineItem
+                year="December 2019"
                 title="The Beginning"
-                description="Ruth Bassey Okim founded Let's Speak Africa as a community initiative in Lagos, Nigeria, focusing on environmental storytelling."
+                description="Let’s Speak Africa was founded on December 13, 2019 by Ruth Bassey Okim in Calabar, Nigeria. And officially launched with a speech concert that marked the beginning of our commitment to youth-led advocacy through public speaking. Since then, we have successfully organized seven speech concerts, each providing a platform for storytelling and civic engagement."
               />
-              
-              <MobileTimelineItem 
-                year="2019"
-                title="First Environmental Storytelling Club"
-                description="Launched our first youth club with 20 members, focusing on using stories to raise awareness about local environmental challenges."
+
+              <MobileTimelineItem
+                year="March 2022"
+                title="Let’s Speak Women’s Open Tournament"
+                description="In March 2022, we introduced the Let’s Speak Women’s Open, a public speaking tournament dedicated to amplifying women's voices. This annual event, held every March in celebration of Women’s Month, has become a cornerstone of our gender equity advocacy"
               />
-              
-              <MobileTimelineItem 
-                year="2020"
+
+              <MobileTimelineItem
+                year="March 2022"
+                title="First Community Outreach"
+                description="Our first community outreach initiative took place in March 2022, featuring a self-defense training program for women, aimed at promoting safety and empowerment."
+              />
+
+              <MobileTimelineItem
+                year="April 2022"
+                title="First Environmental Outreach"
+                description="The following month, in April 2022, we carried out our first environmental outreach, marking the start of our on-ground climate advocacy efforts."
+              />
+
+              <MobileTimelineItem
+                year="2023"
                 title="Expansion to Multiple Cities"
                 description="Expanded our reach to two additional cities in Nigeria, training 50+ youth advocates and launching the Voices for Her program."
               />
-              
-              <MobileTimelineItem 
-                year="2021"
-                title="7 Days of Environmental Action"
-                description="Organized our first coordinated week of environmental action, mobilizing over 500 youth across multiple communities."
-              />
-              
-              <MobileTimelineItem 
-                year="2022"
-                title="International Recognition"
-                description="Received our first international grant and recognition for our innovative approach to youth advocacy and climate action."
-              />
-              
-              <MobileTimelineItem 
-                year="2023"
+
+
+              <MobileTimelineItem
+                year="2024"
                 title="Today and Beyond"
                 description="Continuing to grow our impact with over 2,000 youth reached, 3+ cities with active clubs, and 100+ trained advocates."
               />
@@ -198,42 +200,42 @@ const About = () => {
 
               {/* Timeline Items */}
               <div className="grid grid-cols-1 gap-12">
-                <TimelineItem 
+                <TimelineItem
                   year="2018"
                   title="The Beginning"
                   description="Ruth Bassey Okim founded Let's Speak Africa as a community initiative in Lagos, Nigeria, focusing on environmental storytelling."
                   isLeft={true}
                 />
 
-                <TimelineItem 
+                <TimelineItem
                   year="2019"
                   title="First Environmental Storytelling Club"
                   description="Launched our first youth club with 20 members, focusing on using stories to raise awareness about local environmental challenges."
                   isLeft={false}
                 />
 
-                <TimelineItem 
+                <TimelineItem
                   year="2020"
                   title="Expansion to Multiple Cities"
                   description="Expanded our reach to two additional cities in Nigeria, training 50+ youth advocates and launching the Voices for Her program."
                   isLeft={true}
                 />
 
-                <TimelineItem 
+                <TimelineItem
                   year="2021"
                   title="7 Days of Environmental Action"
                   description="Organized our first coordinated week of environmental action, mobilizing over 500 youth across multiple communities."
                   isLeft={false}
                 />
 
-                <TimelineItem 
+                <TimelineItem
                   year="2022"
                   title="International Recognition"
                   description="Received our first international grant and recognition for our innovative approach to youth advocacy and climate action."
                   isLeft={true}
                 />
 
-                <TimelineItem 
+                <TimelineItem
                   year="2023"
                   title="Today and Beyond"
                   description="Continuing to grow our impact with over 2,000 youth reached, 3+ cities with active clubs, and 100+ trained advocates."
