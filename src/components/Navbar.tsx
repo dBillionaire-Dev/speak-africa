@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import { Button } from "./ui/button";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,8 +26,10 @@ const Navbar = () => {
           <NavLink to="/about">About</NavLink>
           <NavLink to="/programs">Programs</NavLink>
           <NavLink to="/impact">Impact</NavLink>
-          <NavLink to="/blog">Blog</NavLink>
           <NavLink to="/get-involved">Get Involved</NavLink>
+          <Button variant="secondary" asChild className="px-4 py-2 rounded-md">
+            <NavLink to="/blog">Blog</NavLink>
+          </Button>
         </div>
 
         {/* Mobile Navigation Button */}
@@ -43,8 +46,10 @@ const Navbar = () => {
             <MobileNavLink to="/about" onClick={toggleMenu}>About</MobileNavLink>
             <MobileNavLink to="/programs" onClick={toggleMenu}>Programs</MobileNavLink>
             <MobileNavLink to="/impact" onClick={toggleMenu}>Impact</MobileNavLink>
-            <MobileNavLink to="/blog" onClick={toggleMenu}>Blog</MobileNavLink>
             <MobileNavLink to="/get-involved" onClick={toggleMenu}>Get Involved</MobileNavLink>
+            <Button variant="secondary" className="text-left" asChild>
+              <MobileNavLink to="/blog" onClick={toggleMenu}>Blog</MobileNavLink>
+            </Button>
           </div>
         </div>
       )}
