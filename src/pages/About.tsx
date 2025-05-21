@@ -1,8 +1,11 @@
 
 import Hero from "../components/Hero";
 import SectionTitle from "../components/SectionTitle";
+import { useIsMobile } from "../hooks/use-mobile";
 
 const About = () => {
+  const isMobile = useIsMobile();
+  
   return (
     <div>
       <Hero
@@ -150,55 +153,95 @@ const About = () => {
             subtitle="How Let's Speak Africa has evolved over the years" 
           />
 
-          <div className="relative">
-            {/* Timeline Line */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-lsa-gold"></div>
-
-            {/* Timeline Items */}
-            <div className="grid grid-cols-1 gap-12">
-              <TimelineItem 
+          {isMobile ? (
+            <div className="space-y-8">
+              <MobileTimelineItem 
                 year="2018"
                 title="The Beginning"
                 description="Ruth Bassey Okim founded Let's Speak Africa as a community initiative in Lagos, Nigeria, focusing on environmental storytelling."
-                isLeft={true}
               />
-
-              <TimelineItem 
+              
+              <MobileTimelineItem 
                 year="2019"
                 title="First Environmental Storytelling Club"
                 description="Launched our first youth club with 20 members, focusing on using stories to raise awareness about local environmental challenges."
-                isLeft={false}
               />
-
-              <TimelineItem 
+              
+              <MobileTimelineItem 
                 year="2020"
                 title="Expansion to Multiple Cities"
                 description="Expanded our reach to two additional cities in Nigeria, training 50+ youth advocates and launching the Voices for Her program."
-                isLeft={true}
               />
-
-              <TimelineItem 
+              
+              <MobileTimelineItem 
                 year="2021"
                 title="7 Days of Environmental Action"
                 description="Organized our first coordinated week of environmental action, mobilizing over 500 youth across multiple communities."
-                isLeft={false}
               />
-
-              <TimelineItem 
+              
+              <MobileTimelineItem 
                 year="2022"
                 title="International Recognition"
                 description="Received our first international grant and recognition for our innovative approach to youth advocacy and climate action."
-                isLeft={true}
               />
-
-              <TimelineItem 
+              
+              <MobileTimelineItem 
                 year="2023"
                 title="Today and Beyond"
                 description="Continuing to grow our impact with over 2,000 youth reached, 3+ cities with active clubs, and 100+ trained advocates."
-                isLeft={false}
               />
             </div>
-          </div>
+          ) : (
+            <div className="relative">
+              {/* Timeline Line */}
+              <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-lsa-gold"></div>
+
+              {/* Timeline Items */}
+              <div className="grid grid-cols-1 gap-12">
+                <TimelineItem 
+                  year="2018"
+                  title="The Beginning"
+                  description="Ruth Bassey Okim founded Let's Speak Africa as a community initiative in Lagos, Nigeria, focusing on environmental storytelling."
+                  isLeft={true}
+                />
+
+                <TimelineItem 
+                  year="2019"
+                  title="First Environmental Storytelling Club"
+                  description="Launched our first youth club with 20 members, focusing on using stories to raise awareness about local environmental challenges."
+                  isLeft={false}
+                />
+
+                <TimelineItem 
+                  year="2020"
+                  title="Expansion to Multiple Cities"
+                  description="Expanded our reach to two additional cities in Nigeria, training 50+ youth advocates and launching the Voices for Her program."
+                  isLeft={true}
+                />
+
+                <TimelineItem 
+                  year="2021"
+                  title="7 Days of Environmental Action"
+                  description="Organized our first coordinated week of environmental action, mobilizing over 500 youth across multiple communities."
+                  isLeft={false}
+                />
+
+                <TimelineItem 
+                  year="2022"
+                  title="International Recognition"
+                  description="Received our first international grant and recognition for our innovative approach to youth advocacy and climate action."
+                  isLeft={true}
+                />
+
+                <TimelineItem 
+                  year="2023"
+                  title="Today and Beyond"
+                  description="Continuing to grow our impact with over 2,000 youth reached, 3+ cities with active clubs, and 100+ trained advocates."
+                  isLeft={false}
+                />
+              </div>
+            </div>
+          )}
         </div>
       </section>
     </div>
@@ -220,6 +263,22 @@ const TimelineItem = ({ year, title, description, isLeft }: { year: string; titl
         <div className="w-6 h-6 bg-lsa-gold rounded-full"></div>
       </div>
       <div className="w-1/2"></div>
+    </div>
+  );
+};
+
+// Mobile Timeline Item Component
+const MobileTimelineItem = ({ year, title, description }: { year: string; title: string; description: string }) => {
+  return (
+    <div className="relative pl-8 border-l-2 border-lsa-gold">
+      <div className="absolute left-[-8px] top-0">
+        <div className="w-4 h-4 bg-lsa-gold rounded-full"></div>
+      </div>
+      <div className="bg-white p-6 rounded-lg shadow-md">
+        <h3 className="text-lsa-gold font-bold text-xl mb-2">{year}</h3>
+        <h4 className="font-bold text-lg mb-3">{title}</h4>
+        <p className="text-gray-600">{description}</p>
+      </div>
     </div>
   );
 };

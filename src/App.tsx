@@ -11,6 +11,7 @@ import About from "./pages/About";
 import Programs from "./pages/Programs";
 import Impact from "./pages/Impact";
 import GetInvolved from "./pages/GetInvolved";
+import Blog from "./pages/Blog";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/programs" element={<Programs />} />
           <Route path="/impact" element={<Impact />} />
           <Route path="/get-involved" element={<GetInvolved />} />
+          <Route path="/blog" element={<Blog />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
