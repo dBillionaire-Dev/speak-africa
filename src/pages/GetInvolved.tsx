@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Hero from "../components/Hero";
 import SectionTitle from "../components/SectionTitle";
-import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
+import { Facebook, Instagram, Linkedin } from "lucide-react";
 
 const GetInvolved = () => {
   // State for form handling
@@ -36,7 +36,7 @@ const GetInvolved = () => {
       interest: "join",
       message: "",
     });
-    
+
     // Reset success message after 5 seconds
     setTimeout(() => {
       setIsSubmitted(false);
@@ -55,9 +55,9 @@ const GetInvolved = () => {
       {/* Ways to Get Involved Section */}
       <section className="section-padding">
         <div className="container-custom">
-          <SectionTitle 
-            title="Ways to Get Involved" 
-            subtitle="There are many ways to support our mission and make a difference" 
+          <SectionTitle
+            title="Ways to Get Involved"
+            subtitle="There are many ways to support our mission and make a difference"
           />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -131,9 +131,9 @@ const GetInvolved = () => {
       {/* Contact Form Section */}
       <section className="section-padding bg-gray-50">
         <div className="container-custom">
-          <SectionTitle 
-            title="Get in Touch" 
-            subtitle="Reach out to learn more about our programs or how you can get involved" 
+          <SectionTitle
+            title="Get in Touch"
+            subtitle="Reach out to learn more about our programs or how you can get involved"
           />
 
           <div className="flex flex-col lg:flex-row gap-12">
@@ -144,7 +144,7 @@ const GetInvolved = () => {
                     Thank you for reaching out! We'll get back to you soon.
                   </div>
                 )}
-                
+
                 <div className="mb-6">
                   <label htmlFor="name" className="block text-gray-700 font-medium mb-2">Full Name</label>
                   <input
@@ -157,7 +157,7 @@ const GetInvolved = () => {
                     required
                   />
                 </div>
-                
+
                 <div className="mb-6">
                   <label htmlFor="email" className="block text-gray-700 font-medium mb-2">Email Address</label>
                   <input
@@ -170,7 +170,7 @@ const GetInvolved = () => {
                     required
                   />
                 </div>
-                
+
                 <div className="mb-6">
                   <label htmlFor="phone" className="block text-gray-700 font-medium mb-2">Phone Number (Optional)</label>
                   <input
@@ -182,7 +182,7 @@ const GetInvolved = () => {
                     className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lsa-gold"
                   />
                 </div>
-                
+
                 <div className="mb-6">
                   <label htmlFor="interest" className="block text-gray-700 font-medium mb-2">I'm Interested In</label>
                   <select
@@ -199,7 +199,7 @@ const GetInvolved = () => {
                     <option value="other">Other</option>
                   </select>
                 </div>
-                
+
                 <div className="mb-6">
                   <label htmlFor="message" className="block text-gray-700 font-medium mb-2">Your Message</label>
                   <textarea
@@ -212,62 +212,54 @@ const GetInvolved = () => {
                     required
                   ></textarea>
                 </div>
-                
+
                 <button type="submit" className="btn-secondary w-full">Send Message</button>
               </form>
             </div>
-            
+
             <div className="lg:w-1/2">
               <div className="bg-white p-8 rounded-lg shadow-md h-full">
                 <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
-                
+
                 <div className="space-y-6">
                   <div>
                     <h4 className="font-bold text-lg mb-2">Office Address</h4>
                     <p className="text-gray-600">
-                      123 Advocacy Street<br />
-                      Lagos, Nigeria
+                      Calabar, Nigeria
                     </p>
                   </div>
-                  
+
                   <div>
                     <h4 className="font-bold text-lg mb-2">Email Us</h4>
                     <p className="text-gray-600">
-                      info@letsspeakafrica.org<br />
-                      programs@letsspeakafrica.org
+                      <a href="mailto:letsspeakafrica@gmail.com" target="_blank" className="text-white hover:text-lsa-gold transition-colors">info@letsspeakafrica.org</a>
                     </p>
                   </div>
-                  
+
                   <div>
                     <h4 className="font-bold text-lg mb-2">Call Us</h4>
                     <p className="text-gray-600">
-                      +123 456 7890<br />
-                      +123 987 6543
+                      <a href="tel:+2348132609942" target="_blank" className="text-white hover:text-lsa-gold transition-colors">+234 813 260 9942</a>
                     </p>
                   </div>
-                  
+
                   <div>
                     <h4 className="font-bold text-lg mb-2">Follow Us</h4>
                     <div className="flex space-x-4">
                       {/* Social Media Icons */}
                       <a href="#" className="text-lsa-black hover:text-lsa-gold transition-colors">
                         <div className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center">
-                          <Facebook size={20} />
+                          <a href="https://www.facebook.com/share/1A5ijF9eaN/?mibextid=wwXIfr" target="_blank" className="text-white hover:text-lsa-gold transition-colors"><Facebook size={20} /></a>
                         </div>
                       </a>
                       <a href="#" className="text-lsa-black hover:text-lsa-gold transition-colors">
                         <div className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center">
-                          <Instagram size={20} />
+                          <a href="https://www.instagram.com/letsspeakafrica_/?igsh=NWZoaDc1eDd5bzd3&utm_source=qr#" target="_blank" className="text-white hover:text-lsa-gold transition-colors"><Instagram size={20} /></a>
                         </div>
                       </a>
                       <a href="#" className="text-lsa-black hover:text-lsa-gold transition-colors">
                         <div className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center">
-                          <Linkedin size={20} />
-                        </div>
-                      </a>
-                      <a href="#" className="text-lsa-black hover:text-lsa-gold transition-colors">
-                        <div className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center">
-                          <Youtube size={20} />
+                          <a href="https://www.linkedin.com/company/letsspeak-africa/" target="_blank" className="text-white hover:text-lsa-gold transition-colors"><Linkedin size={20} /></a>
                         </div>
                       </a>
                     </div>
@@ -280,11 +272,11 @@ const GetInvolved = () => {
                     Subscribe to our newsletter to receive updates about our work and opportunities to get involved.
                   </p>
                   <form className="flex flex-col sm:flex-row">
-                    <input 
-                      type="email" 
-                      placeholder="Your email address" 
-                      className="w-full px-4 py-3 border border-gray-300 rounded-md sm:rounded-r-none focus:outline-none focus:ring-2 focus:ring-lsa-gold" 
-                      required 
+                    <input
+                      type="email"
+                      placeholder="Your email address"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-md sm:rounded-r-none focus:outline-none focus:ring-2 focus:ring-lsa-gold"
+                      required
                     />
                     <button type="submit" className="w-full sm:w-auto mt-2 sm:mt-0 bg-lsa-gold hover:bg-lsa-gold/90 text-black font-medium py-3 px-6 rounded-md sm:rounded-l-none">
                       Subscribe
@@ -300,9 +292,9 @@ const GetInvolved = () => {
       {/* FAQ Section */}
       <section className="section-padding">
         <div className="container-custom">
-          <SectionTitle 
-            title="Frequently Asked Questions" 
-            subtitle="Answers to common questions about getting involved with Let's Speak Africa" 
+          <SectionTitle
+            title="Frequently Asked Questions"
+            subtitle="Answers to common questions about getting involved with Let's Speak Africa"
           />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -312,35 +304,35 @@ const GetInvolved = () => {
                 Contact us through our form or email to express your interest. We'll provide guidance, training materials, and support to help you establish and run a successful club in your community.
               </p>
             </div>
-            
+
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold mb-3">Do I need prior experience to join your programs?</h3>
               <p className="text-gray-600">
                 No prior experience is necessary! We welcome anyone with passion and commitment. Our programs include training that will help you develop the necessary skills.
               </p>
             </div>
-            
+
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold mb-3">Can organizations partner with specific programs?</h3>
               <p className="text-gray-600">
                 Yes! We welcome partnerships that align with specific programs or initiatives. Contact us to discuss how your organization can support or collaborate on particular aspects of our work.
               </p>
             </div>
-            
+
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold mb-3">How is my donation used?</h3>
               <p className="text-gray-600">
                 Your donations directly support our programs, including training materials, event costs, program development, and operational expenses. We're committed to transparency and can provide details on request.
               </p>
             </div>
-            
+
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold mb-3">Can I volunteer remotely?</h3>
               <p className="text-gray-600">
                 Yes! We have remote volunteering opportunities including content creation, digital marketing, research, and mentorship. Let us know your skills and availability, and we'll find a good match.
               </p>
             </div>
-            
+
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold mb-3">Do you offer internships?</h3>
               <p className="text-gray-600">
