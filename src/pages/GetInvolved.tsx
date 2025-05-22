@@ -232,14 +232,14 @@ const GetInvolved = () => {
                   <div>
                     <h4 className="font-bold text-lg mb-2">Email Us</h4>
                     <p className="text-gray-600">
-                      <a href="mailto:letsspeakafrica@gmail.com" target="_blank" className="text-white hover:text-lsa-gold transition-colors">info@letsspeakafrica.org</a>
+                      <a href="mailto:letsspeakafrica@gmail.com" target="_blank" className=" hover:text-lsa-gold transition-colors">info@letsspeakafrica.org</a>
                     </p>
                   </div>
 
                   <div>
                     <h4 className="font-bold text-lg mb-2">Call Us</h4>
                     <p className="text-gray-600">
-                      <a href="tel:+2348132609942" target="_blank" className="text-white hover:text-lsa-gold transition-colors">+234 813 260 9942</a>
+                      <a href="tel:+2348132609942" target="_blank" className="hover:text-lsa-gold transition-colors">+234 813 260 9942</a>
                     </p>
                   </div>
 
@@ -249,17 +249,17 @@ const GetInvolved = () => {
                       {/* Social Media Icons */}
                       <a href="#" className="text-lsa-black hover:text-lsa-gold transition-colors">
                         <div className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center">
-                          <a href="https://www.facebook.com/share/1A5ijF9eaN/?mibextid=wwXIfr" target="_blank" className="text-white hover:text-lsa-gold transition-colors"><Facebook size={20} /></a>
+                          <a href="https://www.facebook.com/share/1A5ijF9eaN/?mibextid=wwXIfr" target="_blank" className="hover:text-lsa-gold transition-colors"><Facebook size={20} /></a>
                         </div>
                       </a>
                       <a href="#" className="text-lsa-black hover:text-lsa-gold transition-colors">
                         <div className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center">
-                          <a href="https://www.instagram.com/letsspeakafrica_/?igsh=NWZoaDc1eDd5bzd3&utm_source=qr#" target="_blank" className="text-white hover:text-lsa-gold transition-colors"><Instagram size={20} /></a>
+                          <a href="https://www.instagram.com/letsspeakafrica_/?igsh=NWZoaDc1eDd5bzd3&utm_source=qr#" target="_blank" className="hover:text-lsa-gold transition-colors"><Instagram size={20} /></a>
                         </div>
                       </a>
                       <a href="#" className="text-lsa-black hover:text-lsa-gold transition-colors">
                         <div className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center">
-                          <a href="https://www.linkedin.com/company/letsspeak-africa/" target="_blank" className="text-white hover:text-lsa-gold transition-colors"><Linkedin size={20} /></a>
+                          <a href="https://www.linkedin.com/company/letsspeak-africa/" target="_blank" className="hover:text-lsa-gold transition-colors"><Linkedin size={20} /></a>
                         </div>
                       </a>
                     </div>
