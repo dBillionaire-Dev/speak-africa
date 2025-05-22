@@ -279,14 +279,14 @@ const GetInvolved = () => {
                   <p className="text-gray-600 mb-4">
                     Subscribe to our newsletter to receive updates about our work and opportunities to get involved.
                   </p>
-                  <form className="flex">
+                  <form className="flex flex-col sm:flex-row">
                     <input 
                       type="email" 
                       placeholder="Your email address" 
-                      className="flex-grow px-4 py-3 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-lsa-gold" 
+                      className="w-full px-4 py-3 border border-gray-300 rounded-md sm:rounded-r-none focus:outline-none focus:ring-2 focus:ring-lsa-gold" 
                       required 
                     />
-                    <button type="submit" className="bg-lsa-gold hover:bg-lsa-gold/90 text-black font-medium py-3 px-6 rounded-r-md">
+                    <button type="submit" className="w-full sm:w-auto mt-2 sm:mt-0 bg-lsa-gold hover:bg-lsa-gold/90 text-black font-medium py-3 px-6 rounded-md sm:rounded-l-none">
                       Subscribe
                     </button>
                   </form>

@@ -95,12 +95,12 @@ const Blog = () => {
                 <input
                   type="email"
                   placeholder="Your email address"
-                  className="flex-1 px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-lsa-gold focus:border-transparent"
+                  className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-lsa-gold focus:border-transparent"
                   required
                 />
                 <button
                   type="submit"
-                  className="btn-primary whitespace-nowrap"
+                  className="w-full sm:w-auto btn-primary whitespace-nowrap"
                 >
                   Subscribe
                 </button>
