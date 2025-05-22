@@ -1,12 +1,13 @@
 
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
 import Logo from "/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -23,13 +24,13 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-8">
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/about">About</NavLink>
-          <NavLink to="/programs">Programs</NavLink>
-          <NavLink to="/impact">Impact</NavLink>
-          <NavLink to="/get-involved">Get Involved</NavLink>
+          <NavLink to="/" isActive={location.pathname === "/"}>Home</NavLink>
+          <NavLink to="/about" isActive={location.pathname === "/about"}>About</NavLink>
+          <NavLink to="/programs" isActive={location.pathname === "/programs"}>Programs</NavLink>
+          <NavLink to="/impact" isActive={location.pathname === "/impact"}>Impact</NavLink>
+          <NavLink to="/get-involved" isActive={location.pathname === "/get-involved"}>Get Involved</NavLink>
           <Button variant="secondary" asChild className="px-4 py-2 rounded-md">
-            <NavLink to="/blog">Blog</NavLink>
+            <NavLink to="/blog" isActive={location.pathname === "/blog"}>Blog</NavLink>
           </Button>
         </div>
 
@@ -43,13 +44,13 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden bg-white py-4 px-6 shadow-lg animate-fade-in">
           <div className="flex flex-col space-y-4">
-            <MobileNavLink to="/" onClick={toggleMenu}>Home</MobileNavLink>
-            <MobileNavLink to="/about" onClick={toggleMenu}>About</MobileNavLink>
-            <MobileNavLink to="/programs" onClick={toggleMenu}>Programs</MobileNavLink>
-            <MobileNavLink to="/impact" onClick={toggleMenu}>Impact</MobileNavLink>
-            <MobileNavLink to="/get-involved" onClick={toggleMenu}>Get Involved</MobileNavLink>
+            <MobileNavLink to="/" onClick={toggleMenu} isActive={location.pathname === "/"}>Home</MobileNavLink>
+            <MobileNavLink to="/about" onClick={toggleMenu} isActive={location.pathname === "/about"}>About</MobileNavLink>
+            <MobileNavLink to="/programs" onClick={toggleMenu} isActive={location.pathname === "/programs"}>Programs</MobileNavLink>
+            <MobileNavLink to="/impact" onClick={toggleMenu} isActive={location.pathname === "/impact"}>Impact</MobileNavLink>
+            <MobileNavLink to="/get-involved" onClick={toggleMenu} isActive={location.pathname === "/get-involved"}>Get Involved</MobileNavLink>
             <Button variant="secondary" className="text-left" asChild>
-              <MobileNavLink to="/blog" onClick={toggleMenu}>Blog</MobileNavLink>
+              <MobileNavLink to="/blog" onClick={toggleMenu} isActive={location.pathname === "/blog"}>Blog</MobileNavLink>
             </Button>
           </div>
         </div>
@@ -58,13 +59,14 @@ const Navbar = () => {
   );
 };
 
-const NavLink = ({ to, children }: { to: string; children: React.ReactNode }) => {
+const NavLink = ({ to, children, isActive }: { to: string; children: React.ReactNode, isActive: boolean }) => {
   return (
     <Link
       to={to}
-      className="font-medium text-gray-800 hover:text-lsa-green transition-colors py-2"
+      className={`font-medium text-gray-800 hover:text-lsa-green transition-colors py-2 relative ${isActive ? 'text-lsa-green' : ''}`}
     >
       {children}
+      {isActive && <div className="absolute bottom-0 left-0 w-full h-0.5 bg-lsa-green"></div>}
     </Link>
   );
 };
@@ -72,19 +74,22 @@ const NavLink = ({ to, children }: { to: string; children: React.ReactNode }) =>
 const MobileNavLink = ({
   to,
   onClick,
-  children
+  children,
+  isActive
 }: {
   to: string;
   onClick: () => void;
-  children: React.ReactNode
+  children: React.ReactNode;
+  isActive: boolean;
 }) => {
   return (
     <Link
       to={to}
       onClick={onClick}
-      className="font-medium text-gray-800 hover:text-lsa-green transition-colors py-2 border-b border-gray-100 w-full block"
+      className={`font-medium text-gray-800 hover:text-lsa-green transition-colors py-2 border-b border-gray-100 w-full block ${isActive ? 'text-lsa-green' : ''}`}
     >
       {children}
+      {isActive && <div className="h-0.5 bg-lsa-green mt-2"></div>}
     </Link>
   );
 };

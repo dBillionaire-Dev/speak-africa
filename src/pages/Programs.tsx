@@ -1,6 +1,6 @@
-
 import Hero from "../components/Hero";
 import SectionTitle from "../components/SectionTitle";
+import { Link } from "react-router-dom";
 import Banner from "/Project.jpg"
 
 const Programs = () => {
@@ -8,7 +8,7 @@ const Programs = () => {
     <div>
       <Hero
         title="Our Programs"
-        subtitle="At Let’s Speak Africa, we harness storytelling, public speaking, and grassroots action to drive social and environmental change. Here are some of our key projects across Africa and Asia."
+        subtitle="At Let's Speak Africa, we harness storytelling, public speaking, and grassroots action to drive social and environmental change. Here are some of our key projects across Africa and Asia."
         backgroundImage={Banner}
         overlayOpacity="opacity-60"
       />
@@ -97,7 +97,7 @@ const Programs = () => {
                   <li>Public speaking competitions</li>
                 </ul>
               </div>
-              <button className="btn-secondary">Join a Club</button>
+              <Link to="/get-involved#join" className="btn-secondary">Join a Club</Link>
             </div>
           </div>
         </div>
@@ -135,7 +135,7 @@ const Programs = () => {
                   <li>Digital storytelling and advocacy</li>
                 </ul>
               </div>
-              <button className="btn-secondary">Participate in Next Campaign</button>
+              <Link to="/get-involved#volunteer" className="btn-secondary">Participate in Next Campaign</Link>
             </div>
           </div>
         </div>
@@ -173,7 +173,7 @@ const Programs = () => {
                   <li>Digital storytelling initiatives</li>
                 </ul>
               </div>
-              <button className="btn-secondary">Join Voices for Her</button>
+              <Link to="/get-involved#join" className="btn-secondary">Join Voices for Her</Link>
             </div>
           </div>
         </div>
@@ -211,7 +211,7 @@ const Programs = () => {
                   <li>Social media storytelling</li>
                 </ul>
               </div>
-              <button className="btn-secondary">Participate in Next Challenge</button>
+              <Link to="/get-involved#volunteer" className="btn-secondary">Participate in Next Challenge</Link>
             </div>
           </div>
         </div>
@@ -249,7 +249,7 @@ const Programs = () => {
                   <li>Partnered events with local communities</li>
                 </ul>
               </div>
-              <button className="btn-secondary">Join Voices for Her</button>
+              <Link to="/get-involved#volunteer" className="btn-secondary">Join Voices for Her</Link>
             </div>
           </div>
         </div>
@@ -287,7 +287,7 @@ const Programs = () => {
                   <li>Ongoing student-led care</li>
                 </ul>
               </div>
-              <button className="btn-secondary">Volunteer in the Next Project</button>
+              <Link to="/get-involved#volunteer" className="btn-secondary">Volunteer in the Next Project</Link>
             </div>
           </div>
         </div>
@@ -325,7 +325,7 @@ const Programs = () => {
                   <li>Collaboration with city planners</li>
                 </ul>
               </div>
-              <button className="btn-secondary">Join Our Team</button>
+              <Link to="/get-involved#join" className="btn-secondary">Join Our Team</Link>
             </div>
           </div>
         </div>
@@ -363,7 +363,7 @@ const Programs = () => {
                   <li>Online activism and conversations</li>
                 </ul>
               </div>
-              <button className="btn-secondary">Participate in Next Campaign</button>
+              <Link to="/get-involved#volunteer" className="btn-secondary">Participate in Next Campaign</Link>
             </div>
           </div>
         </div>
@@ -401,7 +401,7 @@ const Programs = () => {
                   <li>Digital broadcasting and engagement</li>
                 </ul>
               </div>
-              <button className="btn-secondary">Participate</button>
+              <Link to="/get-involved#join" className="btn-secondary">Participate</Link>
             </div>
           </div>
         </div>
@@ -439,7 +439,7 @@ const Programs = () => {
                   <li>Local language storytelling</li>
                 </ul>
               </div>
-              <button className="btn-secondary">Join our Awareness Campaign</button>
+              <Link to="/get-involved#volunteer" className="btn-secondary">Join our Awareness Campaign</Link>
             </div>
           </div>
         </div>

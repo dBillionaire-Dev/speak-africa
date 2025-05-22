@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 import SectionTitle from "../components/SectionTitle";
 import StatCard from "../components/StatCard";
 import TestimonialCard from "../components/TestimonialCard";
+import { Link } from "react-router-dom";
 import Banner from "/Impact.jpg";
 
 const Impact = () => {
@@ -183,7 +184,7 @@ const Impact = () => {
             <p className="text-lg text-gray-700 mb-6">
               Interested in becoming a partner? We welcome collaborations with organizations that share our vision.
             </p>
-            <button className="btn-primary">Partner With Us</button>
+            <Link to="/get-involved#partner" className="btn-primary">Partner With Us</Link>
           </div>
         </div>
       </section>
