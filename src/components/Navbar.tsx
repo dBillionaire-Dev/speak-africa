@@ -66,6 +66,7 @@ const NavLink = ({ to, children, isActive }: { to: string; children: React.React
       className={`font-medium text-gray-800 hover:text-lsa-green transition-colors py-2 relative ${isActive ? 'text-lsa-green' : ''}`}
     >
       {children}
+      <div className={`absolute bottom-0 left-0 h-0.5 bg-lsa-green transform origin-left transition-transform duration-300 ease-out ${isActive ? 'w-full scale-x-100' : 'w-full scale-x-0'} group-hover:scale-x-100`}></div>
       {isActive && <div className="absolute bottom-0 left-0 w-full h-0.5 bg-lsa-green"></div>}
     </Link>
   );
@@ -86,9 +87,10 @@ const MobileNavLink = ({
     <Link
       to={to}
       onClick={onClick}
-      className={`font-medium text-gray-800 hover:text-lsa-green transition-colors py-2 border-b border-gray-100 w-full block ${isActive ? 'text-lsa-green' : ''}`}
+      className={`font-medium text-gray-800 hover:text-lsa-green transition-colors py-2 border-b border-gray-100 w-full block relative ${isActive ? 'text-lsa-green' : ''}`}
     >
       {children}
+      <div className={`absolute bottom-0 left-0 h-0.5 bg-lsa-green transform origin-left transition-transform duration-300 ease-out ${isActive ? 'w-full scale-x-100' : 'w-full scale-x-0'} hover:scale-x-100`}></div>
       {isActive && <div className="h-0.5 bg-lsa-green mt-2"></div>}
     </Link>
   );
